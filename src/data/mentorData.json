@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "category": "Mentor",
+    "expertise": ["Product Management", "AI/ML"],
+    "industries": ["Technology", "Healthcare"],
+    "stages": "Growth",
+    "location": "San Francisco, CA",
+    "language": ["English", "Spanish"],
+    "profileImage": ""
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "category": "Investor",
+    "expertise": ["Finance", "Retail"],
+    "industries": ["Finance", "Real Estate"],
+    "stages": "Series A",
+    "location": "New York, NY",
+    "language": ["English"],
+    "profileImage": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "category": "Investor",
+    "expertise": ["Finance", "Retail"],
+    "industries": ["Finance", "Real Estate"],
+    "stages": "Series A",
+    "location": "New York, NY",
+    "language": ["English"],
+    "profileImage": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "category": "Investor",
+    "expertise": ["Finance", "Retail"],
+    "industries": ["Finance", "Real Estate"],
+    "stages": "Series A",
+    "location": "New York, NY",
+    "language": ["English"],
+    "profileImage": "https://via.placeholder.com/150"
+  }
+]
