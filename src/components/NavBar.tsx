@@ -8,10 +8,16 @@ import CircleNotificationsRoundedIcon from "@mui/icons-material/CircleNotificati
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import logo from "../assets/images/logo.png";
 
-const NavBar = () => {
+interface NavBarProps {
+  setSearchTerm: (term: string) => void;
+}
+const NavBar = ({ setSearchTerm }: NavBarProps) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value);
+  };
   return (
     <>
-      <Card className="  mx-2  p-2 flex lg:flex-nowrap flex-wrap justify-center lg:justify-between ">
+      <Card className="  mx-2  p-2 flex lg:flex-nowrap flex-wrap  justify-center lg:justify-between ">
         <Box className=" flex gap-10 w-full items-center">
           <img src={logo} alt="" className="pb-2  cursor-pointer" />
           <Typography className="relative w-full border-none">
@@ -19,6 +25,7 @@ const NavBar = () => {
               type="text"
               className="bg-gray-200 border-2 outline-none border-none p-2 pl-10 rounded-full  lg:w-[50%] w-full "
               placeholder="Search"
+              onChange={handleInputChange}
             />
             <SearchOutlinedIcon className="absolute left-2 top-1/2 -translate-y-1/2 opacity-100 transition focus:opacity-0 " />
           </Typography>
